@@ -1,4 +1,5 @@
-﻿using SimpleTrader.WPF.ViewModels;
+﻿using SimpleTrader.FinancialModellingPrepAPI.Services;
+using SimpleTrader.WPF.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
