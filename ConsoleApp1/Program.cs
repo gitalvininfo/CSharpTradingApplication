@@ -10,19 +10,22 @@ class Program
     {
         IDataService<User> userService = new GenericDataService<User>(new SimpleTraderDbContextFactory());
 
-        User user = userService.Update(15, new User() { Username = "Testing" }).Result;
+        //User user = userService.Update(15, new User() { Username = "Testing" }).Result;
 
-        Console.WriteLine(user.Username);
+        //Console.WriteLine(user.Username);
+
+
+
 
         //userService.Create(new User
         //{
-        //    Email = "testing@gmail.com",
-        //    Username = "Alvin",
+        //    Email = "hello@gmail.com",
+        //    Username = "alvin",
         //    Password = "123",
         //    DateJoined = new DateTime(2022, 3, 1, 8, 30, 52)
         //}).Wait();
 
 
-        Console.WriteLine();
+        Console.WriteLine(userService.Update(16, new User() { Username = "Kathrina"}).Result);
     }
 }
