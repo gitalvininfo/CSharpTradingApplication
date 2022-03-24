@@ -33,7 +33,7 @@ namespace SimpleTrader.WPF.ViewModels
         {
             _majorIndexService.GetMajorIndex(MajorIndexType.DowJones).ContinueWith(task =>
             {
-                if (task.Exception == null)
+                 if (task.Exception == null)
                 {
                     DowJones = task.Result;
                 }

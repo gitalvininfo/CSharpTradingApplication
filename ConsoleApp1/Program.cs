@@ -10,7 +10,7 @@ class Program
     {
         IDataService<User> userService = new GenericDataService<User>(new SimpleTraderDbContextFactory());
 
-        User user = userService.Update(15, new User() { Username = "Testing" }).Result;
+        User user = userService.Update(20, new User() { Username = "Tenesse" }).Result;
 
         Console.WriteLine(user.Username);
 

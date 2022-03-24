@@ -33,13 +33,10 @@ namespace SimpleTrader.FinancialModellingPrepAPI.Services
             {
                 case MajorIndexType.DowJones:
                     return ".DJI";
-                    break;
                 case MajorIndexType.Nasdaq:
                     return ".IXIC";
-                    break;
                 case MajorIndexType.SP500:
                     return ".INX";
-                    break;
                 default:
                     return ".DJI";
             }
